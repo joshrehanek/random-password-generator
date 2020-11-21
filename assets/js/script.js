@@ -20,3 +20,10 @@ function writePassword() {
   if (passwordLength < 8 || passwordLength > 128) {
     return alert("Please choose a number no less than 8 and no greater than 128.");
   }
+
+  //  If statementconfirms password requirements are met and begins character choice confirmations
+  
+  let specialChar = confirm("Would you like your password to contain special characters?");
+  let wantNumbers = confirm("Would you like your password to contain numbers?");
+  let wantLowerCase = confirm("Would you like your password to contain lowercase letters?");
+  let wantUpperCase = confirm("Would you like your password to contain uppercase letters?");
