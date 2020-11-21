@@ -59,3 +59,19 @@ function writePassword() {
     passwordCharacterArray = passwordCharacterArray.concat(upperCaseArray);
 
   }
+
+//  for loop generating random characters pulled from the passwordCharacterArray
+  for (let i = 0; i < passwordLength; i++) {
+// this variable generates a random index number from the passwordCharacterArray
+    let randomIndex = Math.floor(Math.random() * passwordCharacterArray.length - 1);
+// this variable is set to the random index value from passwordCharacterArray
+    let temp = passwordCharacterArray[randomIndex];
+// push the results of temp to my 'results' array until the for loop is satisfied
+    result.push(temp);
+
+  }
+//  adds all elements to 'results' array and returns the value
+  return result.join('');
+
+}
+
