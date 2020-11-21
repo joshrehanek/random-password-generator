@@ -1,6 +1,6 @@
 # Random Password generator
 
-# This project is a simple password generator that will make a random password between 8 and 128 characters and may contain lowercase and uppercase characters, as well as numbers and special characters depending on the users preference.
+- This project is a simple password generator that will make a random password between 8 and 128 characters and may contain lowercase and uppercase characters, as well as numbers and special characters depending on the users preference.
 
 ## Table of Contents
 - [General Info](#general-info)
