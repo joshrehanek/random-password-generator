@@ -27,3 +27,13 @@ function writePassword() {
   let wantNumbers = confirm("Would you like your password to contain numbers?");
   let wantLowerCase = confirm("Would you like your password to contain lowercase letters?");
   let wantUpperCase = confirm("Would you like your password to contain uppercase letters?");
+
+    // Conditional Gate
+    if (
+      !specialChar &&
+      !wantNumbers &&
+      !wantLowerCase &&
+      !wantUpperCase) {
+      
+      return alert("Please select at least one.")
+    }
