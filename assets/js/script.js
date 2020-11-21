@@ -37,3 +37,25 @@ function writePassword() {
       
       return alert("Please select at least one.")
     }
+
+    // if special characters were confirmed concatenate them to empty array
+  if (specialChar) {
+    passwordCharacterArray += specialCharArray;
+
+  }
+  
+  // if numbers were confirmed concatenate them to empty array
+  if (wantNumbers) {
+    passwordCharacterArray += numberArray;
+
+  }
+  // if lowercase characters were confirmed concatenate them to empty array
+  if (wantLowerCase) {
+    passwordCharacterArray = passwordCharacterArray.concat(lowerCaseArray);
+
+  }
+  // if uppercase characters were confirmed concatenate them to empty array
+  if (wantUpperCase) {
+    passwordCharacterArray = passwordCharacterArray.concat(upperCaseArray);
+
+  }
