@@ -15,3 +15,8 @@ let result = [];
 function writePassword() {
   //  Prompts user to enter the password length they want
   const passwordLength = parseInt(prompt("How many characters would you like your password to be? Must but at least 8 characters and no more than 128."));
+
+  // Conditional Gate
+  if (passwordLength < 8 || passwordLength > 128) {
+    return alert("Please choose a number no less than 8 and no greater than 128.");
+  }
