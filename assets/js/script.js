@@ -74,4 +74,18 @@ function writePassword() {
   return result.join('');
 
 }
+// Generate Password function
+function generatePassword() {
+// Assignment code
+  let passwordEl = document.querySelector("#password");
+// Assignment code
+  let passwordFinal = writePassword();
+// sets the value of password area equal to passwordFinal(main function)
+  passwordEl.value = passwordFinal
+}
 
+// Assignment Code
+let generateBtn = document.querySelector("#generate");
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", generatePassword);
