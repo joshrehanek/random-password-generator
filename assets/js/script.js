@@ -11,3 +11,7 @@ let passwordCharacterArray = [];
 // blank string fo password to generate based on user preferences  
 let result = [];
 
+// Function to generate password
+function writePassword() {
+  //  Prompts user to enter the password length they want
+  const passwordLength = parseInt(prompt("How many characters would you like your password to be? Must but at least 8 characters and no more than 128."));
