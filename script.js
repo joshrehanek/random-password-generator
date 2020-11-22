@@ -6,13 +6,16 @@ const numberArray = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 const lowerCaseArray = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 // upperCase characters 
 const upperCaseArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
-// blank array to fill with the characters the user selects in the prompts
-let passwordCharacterArray = [];
-// blank string fo password to generate based on user preferences  
-let result = [];
+
 
 // Function to generate password
 function writePassword() {
+// blank array to fill with the characters the user selects in the prompts
+  let passwordCharacterArray = [];
+// blank string fo password to generate based on user preferences  
+  let result = [];
+
+
   //  Prompts user to enter the password length they want
   const passwordLength = parseInt(prompt("How many characters would you like your password to be? Must but at least 8 characters and no more than 128."));
 
@@ -82,10 +85,14 @@ function generatePassword() {
   let passwordFinal = writePassword();
 // sets the value of password area equal to passwordFinal(main function)
   passwordEl.value = passwordFinal
+
 }
 
 // Assignment Code
 let generateBtn = document.querySelector("#generate");
 
+
 // Add event listener to generate button
+
 generateBtn.addEventListener("click", generatePassword);
+
