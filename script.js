@@ -1,11 +1,11 @@
 // special characters
-const specialCharArray = ['@', '#', '$', '%', '<', '^', '<', '!'];
+const specialCharString = "@#$%<^<!";
 // numbers
-const numberArray = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+const numberString = "0123456789";
 // lowerCase characters
-const lowerCaseArray = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+const lowerCaseString = "abcdefghijklmnopqrstuvwxyz";
 // upperCase characters 
-const upperCaseArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+const upperCaseString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 
 // Function to generate password
@@ -14,8 +14,6 @@ function writePassword() {
   let passwordCharacterArray = [];
 // blank string fo password to generate based on user preferences  
   let result = [];
-
-
   //  Prompts user to enter the password length they want
   const passwordLength = parseInt(prompt("How many characters would you like your password to be? Must but at least 8 characters and no more than 128."));
 
@@ -43,23 +41,23 @@ function writePassword() {
 
     // if special characters were confirmed concatenate them to empty array
   if (specialChar) {
-    passwordCharacterArray += specialCharArray;
+    passwordCharacterArray += specialCharString;
 
   }
   
   // if numbers were confirmed concatenate them to empty array
   if (wantNumbers) {
-    passwordCharacterArray += numberArray;
+    passwordCharacterArray += numberString;
 
   }
   // if lowercase characters were confirmed concatenate them to empty array
   if (wantLowerCase) {
-    passwordCharacterArray = passwordCharacterArray.concat(lowerCaseArray);
+    passwordCharacterArray = passwordCharacterArray.concat(lowerCaseString);
 
   }
   // if uppercase characters were confirmed concatenate them to empty array
   if (wantUpperCase) {
-    passwordCharacterArray = passwordCharacterArray.concat(upperCaseArray);
+    passwordCharacterArray = passwordCharacterArray.concat(upperCaseString);
 
   }
 
